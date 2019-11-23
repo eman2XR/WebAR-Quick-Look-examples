@@ -1,3 +1,2 @@
-# ar-quicklook-usdz
+# ar-quicklook
 
-See https://peccu.github.io/ar-quicklook-usdz/
