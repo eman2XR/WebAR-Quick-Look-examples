@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>WebAR using apple quick look (USDZ)</title>
+    <title>WebAR using apple quick look (.usdz and .reality)</title>
     <script>
      /* from Apple's AR Quick Look Gallery */
      (function () {
@@ -24,19 +24,27 @@
     <h1>Web AR using apple quick look (USDZ)</h1>
     <h2> </h2>
 
-    <p data-hide-on-relar>ERROR: VISIT THIS PAGE ON iOS12</p>
+    <p data-hide-on-relar>ERROR: VISIT THIS PAGE ON iOS12 to view the models in AR</p>
     
-       <p>Skinned animation: 3D Scan + Motion Capture</p>
+      <p>Static 3D model (.usdz format)</p>
+      <a href="https://github.com/eman-insilico/AR-Quick-Look-examples/raw/master/lion%20clock%20100k.usdz" rel="ar">
+      <img src="https://github.com/eman-insilico/AR-Quick-Look-examples/raw/master/lion%20clock%20icon.jfif" width="250" height="250">
+    </a>
+    
+       <p>Animated 3D model: 3D Scan + Motion Capture (.reality format)</p>
     <a href=" https://github.com/eman-insilico/AR-Quick-Look-examples/raw/master/Angry%20guy%20animation.reality" rel="ar">
       <img src="https://github.com/eman-insilico/AR-Quick-Look-examples/raw/master/Angry%20guy%20animation%20icon.jfif" width="250" height="250">
     </a>
     
-    <a href="https://github.com/eman-insilico/AR-Quick-Look-examples/raw/master/lion%20clock%20100k.usdz" rel="ar">
-      <img src="https://github.com/eman-insilico/AR-Quick-Look-examples/raw/master/lion%20clock%20icon.jfif" width="250" height="250">
-    </a>
    
-    <p> 3D models converted in Unity and USD plugin: <a href="https://blogs.unity3d.com/2019/03/28/pixars-universal-scene-description-for-unity-out-in-preview/"</a></p>
-    <p>More usdz are in <a href="https://developer.apple.com/arkit/gallery/" target="_blank">https://developer.apple.com/arkit/gallery/</a> or <a href="https://www.fusionar.app">https://www.fusionar.app</a>.</p>
+    <p> Static 3D models can be converted to USDZ in Unity usign the USD plugin: <a href="https://blogs.unity3d.com/2019/03/28/pixars-universal-scene-description-for-unity-out-in-preview/"</a>
+      or using the python tools from apple (requirex xcode): <a href="https://developer.apple.com/download/more/?=USDPython">
+      </p>
+    </p> The best workflow for animation I found was to convert the models to gltf (in Blender or download one from sketchfab)
+    and then convert it to .usdz using the phyton tools.</p>
+    
+    
+    <p>More examples can be found here: <a href="https://developer.apple.com/arkit/gallery/" target="_blank">https://developer.apple.com/arkit/gallery/</a></p>
     <p>More resources are in <a href="https://github.com/vfxpro99/usd-resources">https://github.com/vfxpro99/usd-resources</a></p>
 
   </body>
