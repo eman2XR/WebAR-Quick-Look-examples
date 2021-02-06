@@ -3,7 +3,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>WebAR using apple quick look (.usdz and .reality)</title>
     <script>
-      document.getElementById('pay').click();
+      window.onload=function(){
+     if(document.getElementById('test')!=null||document.getElementById('test')!=""){ 
+     document.getElementById('test').click();
+     }
+    }
     </script>
     <script>
       /* from Apple's AR Quick Look Gallery */
@@ -45,7 +49,7 @@
 <p>-</p>
     
        <p> Face tracking (.reality format)</p>
-    <a id="pay" href="https://github.com/eman-insilico/AR-Quick-Look-examples/raw/master/Face%20tracking%20example.reality" rel="ar" >
+    <a id="test" href="https://github.com/eman-insilico/AR-Quick-Look-examples/raw/master/Face%20tracking%20example.reality" rel="ar" >
       <img src="https://github.com/eman-insilico/AR-Quick-Look-examples/raw/master/Face%20tracking%20icon.JPG" width="250" height="250">
     </a>
     
